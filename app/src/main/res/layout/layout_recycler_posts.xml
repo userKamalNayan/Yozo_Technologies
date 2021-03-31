@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardElevation="5dp"
+app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0DDDD"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/layout_posts_user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="User Id " />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#BCBABA"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambo"
+                    android:textSize="15sp"
+                    android:textColor="@color/title_text_color"
+                    android:gravity="start"
+
+                    android:text="Id " />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="start"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/layout_posts_id"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.3"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/capriola"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="start"
+
+                    android:text="Id " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambo"
+                    android:textSize="15sp"
+                    android:textColor="@color/title_text_color"
+                    android:gravity="start"
+
+                    android:text="Title" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="start"
+
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/layout_posts_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.3"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/capriola"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="start"
+
+                    android:text="Title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambo"
+                    android:textSize="15sp"
+                    android:textColor="@color/title_text_color"
+                    android:gravity="start"
+
+                    android:text="Body" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="15sp"
+                    android:textColor="@color/normal_text_color"
+                    android:gravity="start"
+
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/layout_posts_body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/capriola"
+                    android:layout_weight="2.3"
+                    android:gravity="start"
+                    android:text="Body"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
